@@ -23,7 +23,7 @@ alias ssh='custom_ssh_wrapper'
 # ssh XXX.XXX or XXX.XXX.XXX.XXX
 custom_ssh_wrapper() {
   if [[ $1 =~ ^[0-9]+\.[0-9]+$ ]]; then
-    ip="172.30.$1"
+    ip="192.168.$1"
   else
     ip="$1"
   fi
